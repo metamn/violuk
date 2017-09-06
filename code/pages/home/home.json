@@ -1,8 +1,14 @@
 {
   "title": "Home",
+  "strapline": "Curating on new trajectories",
   "intro": [
     "Viola Lukács is a Geneva-based curator, researcher and art professional with interest in transdisciplinary cultural activity.",
     "She has curated exhibitions at the Plutschow Gallery in Zürich, Pavillion Sicli in Geneva, and dOCUMENTA(13) in Germany."
+  ],
+  "about": [
+    "A good few sentences / paragraphs here ...",
+    "Each on a new line liek this",
+    "It should be the continuation of the Intro above"
   ],
   "contact": {
     "address": [
@@ -23,7 +29,11 @@
       "type": "",
       "venue": "UN",
       "location": "Geneva, CH",
-      "year": "2017"
+      "year": "2017",
+      "description": [
+        "A good few sentences / paragraphs here ...",
+        "Each on a new line liek this"
+      ]
     },
     {
       "title": "Patterns of Migration",
@@ -32,7 +42,11 @@
       "type": "group exhibition",
       "venue": "Millenaris Park",
       "location": "Budapest, H",
-      "year": "2016"
+      "year": "2016",
+      "description": [
+        "A good few sentences / paragraphs here ...",
+        "Each on a new line liek this"
+      ]
     },
     {
       "title": "Judit Kis: I Have Never Happened",
@@ -41,7 +55,11 @@
       "type": "",
       "venue": "TOPIC",
       "location": "Geneva, CH",
-      "year": "2016"
+      "year": "2016",
+      "description": [
+        "A good few sentences / paragraphs here ...",
+        "Each on a new line liek this"
+      ]
     },
     {
       "title": "Bernar Venet: MetaMetria",
@@ -50,7 +68,11 @@
       "type": "",
       "venue": "Vass Collection",
       "location": "Veszprem, H",
-      "year": "2015"
+      "year": "2015",
+      "description": [
+        "A good few sentences / paragraphs here ...",
+        "Each on a new line liek this"
+      ]
     }
   ]
 }
