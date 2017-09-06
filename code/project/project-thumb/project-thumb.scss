@@ -1,0 +1,5 @@
+@mixin project-thumb {
+  &__title {
+    @include title;
+  }
+}

@@ -3,5 +3,43 @@
   "intro": [
     "Viola Lukács is a Geneva-based curator, researcher and art professional with interest in transdisciplinary cultural activity.",
     "She has curated exhibitions at the Plutschow Gallery in Zürich, Pavillion Sicli in Geneva, and dOCUMENTA(13) in Germany."
+  ],
+  "projects": [
+    {
+      "title": "Yona Friedman: Popular Architecture",
+      "link": "",
+      "role": "curator with Nader Seraj",
+      "type": "",
+      "venue": "UN",
+      "location": "Geneva, CH",
+      "year": "2017"
+    },
+    {
+      "title": "Patterns of Migration",
+      "link": "",
+      "role": "curator",
+      "type": "group exhibition",
+      "venue": "Millenaris Park",
+      "location": "Budapest, H",
+      "year": "2016"
+    },
+    {
+      "title": "Judit Kis: I Have Never Happened",
+      "link": "",
+      "role": "curator",
+      "type": "",
+      "venue": "TOPIC",
+      "location": "Geneva, CH",
+      "year": "2016"
+    },
+    {
+      "title": "Bernar Venet: MetaMetria",
+      "link": "",
+      "role": "curator",
+      "type": "",
+      "venue": "Vass Collection",
+      "location": "Veszprem, H",
+      "year": "2015"
+    }
   ]
 }
