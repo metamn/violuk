@@ -4,7 +4,7 @@
   <section class="home">
     <h3>Home</h3>
 
-    h
+    {% include '../../project/intro/intro.html.swig' %}
   </section>
 
 {% endblock %}
