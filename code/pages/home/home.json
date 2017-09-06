@@ -4,6 +4,17 @@
     "Viola Lukács is a Geneva-based curator, researcher and art professional with interest in transdisciplinary cultural activity.",
     "She has curated exhibitions at the Plutschow Gallery in Zürich, Pavillion Sicli in Geneva, and dOCUMENTA(13) in Germany."
   ],
+  "contact": {
+    "address": [
+      "Quai du Cheval Blanc 7",
+      "CH-1227 Genève"
+    ],
+    "phone": "+ 41 79 28 09 280",
+    "email": "violalukacs@gmail.com",
+    "social": [
+      "https://facebook.com/violuk1937"
+    ]
+  },
   "projects": [
     {
       "title": "Yona Friedman: Popular Architecture",

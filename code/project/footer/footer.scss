@@ -1,1 +1,5 @@
-@mixin footer {}
+@mixin footer {
+  .contact {
+    @include contact;
+  }
+}
