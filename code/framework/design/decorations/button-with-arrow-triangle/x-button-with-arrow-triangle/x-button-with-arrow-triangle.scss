@@ -1,0 +1,23 @@
+@mixin x-button-with-arrow-triangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .button-with-arrow-triangle {
+    @include button-with-arrow-triangle;
+    margin: $lem;
+
+    &.oops {
+      transform: rotate(-45deg);
+    }
+  }
+
+  @include portrait {
+    flex-direction: column;
+
+    .button-with-arrow-triangle {
+      margin: $lem * 5 0;
+    }
+  }
+}

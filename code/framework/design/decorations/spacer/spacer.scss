@@ -1,0 +1,27 @@
+// Spacer
+//
+// Display a text as a matrix
+//
+// Styleguide spacer
+@mixin spacer($padding: $lem / 2) {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+
+  overflow: hidden;
+
+  &__text {
+    display: none;
+  }
+
+  &__chars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .char {
+      padding: $padding;
+    }
+  }
+}

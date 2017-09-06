@@ -1,0 +1,8 @@
+@mixin text-rolling__chars {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include text-rolling__chars--simple;
+  @include text-rolling__chars--matrix;
+  @include text-rolling__chars--reveal-continuous(18);
+}

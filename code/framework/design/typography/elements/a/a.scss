@@ -1,0 +1,8 @@
+// Links inside articles
+@mixin a {
+  a,
+  .link {
+    @include colors(black-on-white);
+    @include font(nimbus-sans-regular);
+  }
+}

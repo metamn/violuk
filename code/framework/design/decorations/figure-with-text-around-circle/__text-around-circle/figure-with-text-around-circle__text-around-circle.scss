@@ -1,0 +1,6 @@
+@mixin figure-with-text-around-circle__text-around-circle($width, $number-of-chars) {
+  @include text-around-circle($width, $number-of-chars);
+  position: absolute;
+  left: 47%;
+  top: 0;
+}

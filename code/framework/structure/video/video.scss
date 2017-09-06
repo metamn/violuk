@@ -1,0 +1,13 @@
+// Video
+//
+// Displays a video with a fallback image
+// Good source of free HD videos can be found at http://mazwai.com/#/videos
+//
+// - https://developer.mozilla.org/en-US/Apps/Fundamentals/Audio_and_video_delivery/cross_browser_video_player
+// - Converter: https://dzone.com/articles/cross-browser-compatible-html5
+//
+// Styleguide video
+@mixin video {
+  display: flex; // to remove a bottom border added by default browser settings
+  width: 100%;
+}

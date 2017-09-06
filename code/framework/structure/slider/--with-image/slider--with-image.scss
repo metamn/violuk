@@ -1,0 +1,55 @@
+// Slider with image
+//
+// Experimental :
+//
+// In a slider without image everything is ok. With an image we should specify the exact dimensions of the image.
+// Otherwise the slider will truncate it.
+// The intrinsic ratio mixin is a way to define the dimensions of an image in a fully responsive way.
+//
+// When using the intrinsic ratio all images must have exactly the same dimensions and they must have the exact aspect ratio
+//
+// To create 2x, retina landscape and portrait screenshots with this monitor:
+// - landscape 16:9 - screenshot 1920x1080 (2x), resize to 960 for 1x
+// - portrait 3:4 - screenshoot 900x1200 (2x), resize to 450x for 1x
+//
+// => with this monitor cannot be created fullscreen retina screenshots
+// => to have a monitor for @2x landscape and portrait screenshots we would need a 3840x2160 monitor with rotation capability
+// => it's a 4K/UHD monitor ~500usd from Asus: http://www.amazon.com/PB287Q-Monitor-3840X2160-Resolution-28-Inch/dp/B00KJGY3TO/ref=sr_1_2?s=pc&ie=UTF8&qid=1455668007&sr=1-2&keywords=asus&refinements=p_89%3AAsus%2Cp_n_feature_three_browse-bin%3A12659079011
+//
+// The best we can have without retina support is:
+/*
+    {
+      "name": "mobile",
+      "width": "384"
+    },
+    {
+      "name": "tablet",
+      "width": "768"
+    },
+    {
+      "name": "laptop",
+      "width": "1440"
+    },
+    {
+      "name": "desktop",
+      "width": "1920"
+    }
+*/
+// To have 2x, retina friendly images:
+// - landscape 16:9 - 2x: 3840x2160 => 1920x1080
+// - portrait 3:4 - 2x: 1536x2048 => 768x1024
+//
+@mixin slider--with-image {
+  // The `slider` must have the intrinsic ratio set !!!
+  // Do it in the calling code
+  /*
+  .slider {
+    @include slider--with-image;
+    @include intrinsic-ratio(3, 4, '.slider__slides');
+  }
+  */
+
+  .figure {
+    @include figure(stretched);
+  }
+}

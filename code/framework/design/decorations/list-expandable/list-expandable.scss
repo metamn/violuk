@@ -1,0 +1,27 @@
+@mixin list-expandable {
+  .ul {
+    @include ul;
+
+    display: flex;
+    flex-direction: column;
+
+    .li {
+      + .li {
+        margin-top: $lem / 2;
+      }
+    }
+  }
+
+  &__item {
+    @include list-expandable__item;
+  }
+
+  &__more {
+    @include list-expandable__more;
+  }
+
+  &__item,
+  &__more {
+    @include transition(opacity);
+  }
+}

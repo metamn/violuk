@@ -1,0 +1,106 @@
+
+
+// Fonts
+//
+// Typefaces and fonts used across the site.
+// They are never used directly but set up properly with the `text-style` mixin.
+//
+// Styleguide fonts
+
+
+// Nimbus Sans
+// - The default typeface, sans-serif
+// - character set: Full character set, with OpenType Features
+// - served from Typekit
+// - styles and weights: Light, Light Italic, Regular, Bold, Black, 
+
+
+// Silkscreen
+// - The logo typeface, sans-serif
+// - character set: English, with OpenType Features
+// - served from Typekit
+// - styles and weights: Regular, 
+
+
+
+
+// The font mixin
+@mixin font($variant) {
+
+  @if ($variant == 'nimbus-sans-light') {
+    font-family: 'nimbus-sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @if ($variant == 'nimbus-sans-light-italic') {
+    font-family: 'nimbus-sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @if ($variant == 'nimbus-sans-regular') {
+    font-family: 'nimbus-sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @if ($variant == 'nimbus-sans-bold') {
+    font-family: 'nimbus-sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @if ($variant == 'nimbus-sans-black') {
+    font-family: 'nimbus-sans', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @if ($variant == 'silkscreen-regular') {
+    font-family: 'silkscreen', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+}
+
+
+// Font classes
+
+.nimbus-sans-light {
+  font-family: 'nimbus-sans', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.nimbus-sans-light-italic {
+  font-family: 'nimbus-sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.nimbus-sans-regular {
+  font-family: 'nimbus-sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nimbus-sans-bold {
+  font-family: 'nimbus-sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nimbus-sans-black {
+  font-family: 'nimbus-sans', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.silkscreen-regular {
+  font-family: 'silkscreen', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+

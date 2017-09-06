@@ -1,0 +1,15 @@
+@mixin pre {
+  pre,
+  .pre {
+    background: #f1f1f1;
+    box-sizing: padding-box;
+    padding: $lem;
+    margin-bottom: 0;
+  }
+
+  pre + .caption {
+    .caption__text {
+      @include text-style(figcaption);
+    }
+  }
+}

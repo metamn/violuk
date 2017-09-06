@@ -1,0 +1,42 @@
+// Button with triangle
+//
+// Originally seen at [Beats in Space](http://www.beatsinspace.net/)
+//
+// Experimental
+// - it is strongly coupled with the `text-style`
+// - it's not cross browser compatible. Sometimes between the text and triangle there is a smooth border which is ugly
+// - if the text goes multi-line we will (almost) get a tooltip instead of a button
+// - maybe with a display font it would look much better
+//
+// Styleguide button-with-triangle
+@mixin button-with-triangle($direction: right, $size: $lem, $color: $black) {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    @include text-style(button-with-triangle);
+    order: 2;
+  }
+
+  .triangle {
+    @include triangle($direction, $size, $color);
+    //transform: translateX(-1px) scale(1.01);
+    order: 2;
+  }
+
+  &--left {
+    @include button-with-triangle--left($size: $lem, $color: $black);
+  }
+
+  &--right {
+    @include button-with-triangle--right;
+  }
+
+  &--bottom {
+    @include button-with-triangle--bottom;
+  }
+
+  &--top {
+    @include button-with-triangle--top;
+  }
+}

@@ -1,0 +1,124 @@
+// Colors
+//
+// The colors together with the color pairs.
+// Colors don't exist alone yet in pairs, like black on white.
+// All color pairs have a contrast ratio set for perfect readability using [Lea Verou's contrast checking tool](http://leaverou.github.io/contrast-ratio/).
+//
+// Styleguide colors
+
+// Main color
+$white: #fff;
+
+// Main color
+$black: #000;
+
+// Secondary color
+$gray: mix($white, $black);
+
+// Secondary color
+$lightgray: mix($white, $black, 75%);
+
+// Secondary color
+$darkgray: mix($white, $black, 25%);
+
+
+// Color combinations. Colors are not used standalone but in pairs
+@mixin colors($name) {
+
+  @if ($name == 'black-on-white') {
+    color: $black;
+    background-color: $white;
+    
+    
+  }
+
+  @if ($name == 'white-on-black') {
+    color: $white;
+    background-color: $black;
+    
+    
+  }
+
+  @if ($name == 'gray-on-white') {
+    color: $gray;
+    background-color: $white;
+    
+    
+  }
+
+  @if ($name == 'lightgray-on-white') {
+    color: $lightgray;
+    background-color: $white;
+    
+    
+  }
+
+  @if ($name == 'darkgray-on-white') {
+    color: $darkgray;
+    background-color: $white;
+    
+    
+  }
+
+}
+
+// Color classes
+
+.white {
+  background: #fff;
+};
+
+.black {
+  background: #000;
+};
+
+.gray {
+  background: mix($white, $black);
+};
+
+.lightgray {
+  background: mix($white, $black, 75%);
+};
+
+.darkgray {
+  background: mix($white, $black, 25%);
+};
+
+
+// Color pair classes
+
+.black-on-white {
+  color: $black;
+  background-color: $white;
+  
+  
+}
+
+.white-on-black {
+  color: $white;
+  background-color: $black;
+  
+  
+}
+
+.gray-on-white {
+  color: $gray;
+  background-color: $white;
+  
+  
+}
+
+.lightgray-on-white {
+  color: $lightgray;
+  background-color: $white;
+  
+  
+}
+
+.darkgray-on-white {
+  color: $darkgray;
+  background-color: $white;
+  
+  
+}
+

@@ -1,0 +1,8 @@
+@mixin code {
+  .code,
+  code {
+    //@include font(nimbus-sans-bold);
+    //@include uppercase($lem / 4);
+    font-size: smaller;
+  }
+}

@@ -1,0 +1,13 @@
+// https://css-tricks.com/set-text-on-a-circle/
+@mixin text-around-circle( $size, $num-letters) {
+  width: $size;
+  height: $size;
+  
+  &__text {
+    display: none;
+  }
+
+  &__chars {
+    @include text-around-circle__chars($size, $num-letters);
+  }
+}

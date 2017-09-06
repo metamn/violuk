@@ -1,0 +1,236 @@
+
+
+// Text style
+//
+// Typographic settings for different text types.
+// Each text type has set a `font`, a `scale`, a `color` and parameters like letter-spacing, max-width or else.
+// Everything text uses this `text-style` mixin. We don't set `color` or `font` directly for a text.
+//
+// Styleguide text-style
+
+// The width of a text block
+
+$text-block-width: 25em; 
+
+
+
+// The text mixin
+@mixin text-style($variant) {
+  
+  // Default
+  // - The basic settings for a text.
+  @if ($variant == 'default') {
+    @include font(nimbus-sans-regular);
+    @include scale(default);
+    @include colors(black-on-white);
+    
+    letter-spacing: 1.1px;
+    
+    
+  }
+  
+  // Body text
+  // - Settings for text blocks.
+  @if ($variant == 'body-text') {
+    @include p;
+    
+    max-width: 25em;
+    
+    
+  }
+  
+  // Article body text
+  // - Settings for very long text.
+  @if ($variant == 'article-body-text') {
+    @include font(nimbus-sans-light);
+    @include scale(large-1);
+    @include p;
+    @include h2;
+    @include h3;
+    @include a;
+    @include ol;
+    @include ul--body-text;
+    @include blockquote;
+    @include image;
+    @include gist;
+    @include article-body-text;
+    @include code;
+    @include pre;
+    
+    
+    
+  }
+  
+  // Metamn
+  // - Settings for the Metamn logo.
+  @if ($variant == 'metamn') {
+    @include font(silkscreen-regular);
+    @include scale(large-1);
+    
+    
+    
+  }
+  
+  // Title
+  // - Title
+  @if ($variant == 'title') {
+    @include uppercase($lem);
+    @include word-wrap;
+    
+    line-height: 2.96;
+    
+    
+  }
+  
+  // Name
+  // - A person&#39;s name
+  @if ($variant == 'name') {
+    @include font(nimbus-sans-bold);
+    @include uppercase($lem / 4);
+    @include scale(small-1);
+    @include colors(white-on-black);
+    @include link(white-on-black);
+    
+    padding: $lem / 8 $lem / 4;
+    
+    
+  }
+  
+  // Figcaption
+  // - The caption of a figure, code block etc.
+  @if ($variant == 'figcaption') {
+    @include font(nimbus-sans-light);
+    @include scale(small-1);
+    @include colors(black-on-white);
+    
+    
+    
+  }
+  
+  // Button with triangle
+  // - Strong text, call for action.
+  @if ($variant == 'button-with-triangle') {
+    @include font(nimbus-sans-black);
+    @include uppercase(1.25px);
+    @include colors(white-on-black);
+    
+    padding: $lem / 2 $lem;
+    
+    
+  }
+  
+  // Button with arrow triangle
+  // - Strong text, call for action.
+  @if ($variant == 'button-with-arrow-triangle') {
+    @include font(nimbus-sans-black);
+    @include uppercase(1.25px);
+    @include border(normal, all);
+    
+    padding: $lem / 2 $lem;
+    transform: translateX($lem);
+    
+    
+  }
+  
+}
+
+
+// Text style classes
+
+.text-style--default {
+  @include font(nimbus-sans-regular);
+  @include scale(default);
+  @include colors(black-on-white);
+  
+  letter-spacing: 1.1px;
+  
+  
+}
+
+.text-style--body-text {
+  @include p;
+  
+  max-width: 25em;
+  
+  
+}
+
+.text-style--article-body-text {
+  @include font(nimbus-sans-light);
+  @include scale(large-1);
+  @include p;
+  @include h2;
+  @include h3;
+  @include a;
+  @include ol;
+  @include ul--body-text;
+  @include blockquote;
+  @include image;
+  @include gist;
+  @include article-body-text;
+  @include code;
+  @include pre;
+  
+  
+  
+}
+
+.text-style--metamn {
+  @include font(silkscreen-regular);
+  @include scale(large-1);
+  
+  
+  
+}
+
+.text-style--title {
+  @include uppercase($lem);
+  @include word-wrap;
+  
+  line-height: 2.96;
+  
+  
+}
+
+.text-style--name {
+  @include font(nimbus-sans-bold);
+  @include uppercase($lem / 4);
+  @include scale(small-1);
+  @include colors(white-on-black);
+  @include link(white-on-black);
+  
+  padding: $lem / 8 $lem / 4;
+  
+  
+}
+
+.text-style--figcaption {
+  @include font(nimbus-sans-light);
+  @include scale(small-1);
+  @include colors(black-on-white);
+  
+  
+  
+}
+
+.text-style--button-with-triangle {
+  @include font(nimbus-sans-black);
+  @include uppercase(1.25px);
+  @include colors(white-on-black);
+  
+  padding: $lem / 2 $lem;
+  
+  
+}
+
+.text-style--button-with-arrow-triangle {
+  @include font(nimbus-sans-black);
+  @include uppercase(1.25px);
+  @include border(normal, all);
+  
+  padding: $lem / 2 $lem;
+  transform: translateX($lem);
+  
+  
+}
+

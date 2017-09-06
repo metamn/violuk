@@ -1,0 +1,9 @@
+@mixin blockquote {
+  blockquote,
+  .blockquote {
+    @include font(nimbus-sans-regular);
+    @include scale(large-1);
+    text-align: center;
+    margin: $lem 0;
+  }
+}

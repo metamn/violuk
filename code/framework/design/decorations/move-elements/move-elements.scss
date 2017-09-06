@@ -1,0 +1,5 @@
+@mixin move-elements {
+  position: absolute;
+
+  @include transition(top);
+}

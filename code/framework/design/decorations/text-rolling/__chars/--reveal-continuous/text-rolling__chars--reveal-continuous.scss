@@ -1,0 +1,22 @@
+@mixin text-rolling__chars--reveal-continuous($count) {
+  .char {
+    $duration: 1s;
+
+    @for $i from 1 to $count + 2 {
+      &--#{$i - 1} {
+        @include animation(text-rolling__chars--reveal-continuous, $duration, infinite);
+        animation-delay: ($i - 1) * $duration;
+      }
+    }
+  }
+}
+
+@include keyframes(text-rolling__chars--reveal-continuous) {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}

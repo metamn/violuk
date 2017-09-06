@@ -1,0 +1,8 @@
+@mixin button-with-triangle--bottom {
+  transform: rotate(90deg);
+
+  .button-with-triangle__text {
+    padding-right: $lem / 2;
+    padding-left: $lem * 2 - $lem / 2;
+  }
+}

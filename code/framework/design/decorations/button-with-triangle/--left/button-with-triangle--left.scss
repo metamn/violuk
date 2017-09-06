@@ -1,0 +1,11 @@
+@mixin button-with-triangle--left($size: $lem, $color: $black) {
+  .button-with-triangle__text {
+    padding-right: $lem / 2;
+    padding-left: $lem * 2 - $lem / 2;
+  }
+
+  .triangle {
+    @include triangle--left($size: $lem, $color: $black);
+    order: 1;
+  }
+}

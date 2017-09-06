@@ -1,0 +1,11 @@
+@mixin x-saquo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .saquo {
+    @include saquo;
+    margin: $lem;
+  }
+}

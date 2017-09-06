@@ -1,0 +1,8 @@
+// http://thenewcode.com/1032/Easy-Cross-Browser-Text-Masks-with-Blend-Modes
+@mixin text-clipping-mask($color-scheme, $blend-mode) {
+  display: block; // Flex is not working ...
+  word-wrap: break-word;
+
+  @include colors($color-scheme);
+  mix-blend-mode: $blend-mode;
+}

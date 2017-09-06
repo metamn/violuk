@@ -1,0 +1,37 @@
+// Button with arrow triangle
+//
+// An original idea. Works well in all cases and browsers.
+// It looks well with all `border-styles` of different sizes, all colors for both the arrow line and the arrow triangle
+// It can be used as a basic button and add stronger, more accented variations / hover styles. See screenshot attached.
+//
+// Styleguide button-with-arrow-triangle
+@mixin button-with-arrow-triangle($direction: right, $size: $lem * 3, $color: $black) {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    @include text-style(button-with-arrow-triangle);
+    order: 2;
+  }
+
+  .arrow-with-triangle {
+    @include arrow-with-triangle($direction, $size, $color);
+    order: 2;
+  }
+
+  &--left {
+    @include button-with-arrow-triangle--left;
+  }
+
+  &--right {
+    @include button-with-arrow-triangle--right;
+  }
+
+  &--bottom {
+    @include button-with-arrow-triangle--bottom;
+  }
+
+  &--top {
+    @include button-with-arrow-triangle--top;
+  }
+}

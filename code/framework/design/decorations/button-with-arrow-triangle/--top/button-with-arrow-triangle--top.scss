@@ -1,0 +1,8 @@
+@mixin button-with-arrow-triangle--top {
+  transform: rotate(-90deg);
+
+  .button-with-arrow-triangle__text {
+    padding-left: $lem / 2;
+    padding-right: $lem * 2 - $lem / 2;
+  }
+}

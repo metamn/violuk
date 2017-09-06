@@ -1,0 +1,12 @@
+@mixin blockquote-with-author {
+  .author {
+    @include author;
+    margin: $lem 0;
+
+    &__avatar,
+    &__name,
+    &__title {
+      display: none;
+    }
+  }
+}

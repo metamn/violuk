@@ -1,0 +1,7 @@
+@mixin checkbox__square($size) {
+  display: flex;
+  width: $size;
+  height: $size;
+
+  @include border(thin, all);
+}

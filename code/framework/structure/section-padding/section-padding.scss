@@ -1,0 +1,17 @@
+@mixin section-padding {
+  padding-left: $lem / 2;
+  padding-right: $lem / 2;
+  width: calc(100% - #{$lem});
+
+  @include laptop {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: calc(100% - 10%);
+  }
+
+  @include desktop {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: calc(100% - 20%);
+  }
+}

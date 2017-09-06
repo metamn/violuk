@@ -1,0 +1,17 @@
+@mixin list--grid-view($margin-right: $lem, $margin-bottom: $lem) {
+  @include mobile {
+    @include grid(1, 0, $margin-bottom);
+  }
+
+  @include tablet {
+    @include grid(2, $margin-right, $margin-bottom);
+  }
+
+  @include laptop {
+    @include grid(3, $margin-right, $margin-bottom);
+  }
+
+  @include desktop {
+    @include grid(4, $margin-right, $margin-bottom);
+  }
+}

@@ -1,0 +1,4 @@
+@mixin x-list {
+  padding: $lem;
+  @include list;
+}

@@ -1,0 +1,12 @@
+@mixin list--list-view($margin-bottom: $lem) {
+  display: flex;
+  flex-direction: column;
+
+  .list-item {
+    margin-bottom: $margin-bottom;
+
+    .figure {
+      max-width: 25em;
+    }
+  }
+}

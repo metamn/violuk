@@ -1,0 +1,13 @@
+@mixin checkbox__checkmark($size) {
+  display: flex;
+  width: $size * 2;
+  height: $size / 2;
+
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 1px;
+  top: -1px;
+
+  @include border--thin(left);
+  @include border--thin(bottom);
+}

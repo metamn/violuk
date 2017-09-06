@@ -1,0 +1,97 @@
+{
+  "colors": [
+    {
+      "name": "white",
+      "value": "#fff",
+      "description": "Main color"
+    },
+    {
+      "name": "black",
+      "value": "#000",
+      "description": "Main color"
+    },
+    {
+      "name": "gray",
+      "value": "mix($white, $black)",
+      "description": "Secondary color"
+    },
+    {
+      "name": "lightgray",
+      "value": "mix($white, $black, 75%)",
+      "description": "Secondary color"
+    },
+    {
+      "name": "darkgray",
+      "value": "mix($white, $black, 25%)",
+      "description": "Secondary color"
+    }
+  ],
+  "color_pairs": [
+    {
+      "name": "black-on-white",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$black"
+        },
+        {
+          "name": "background-color",
+          "value": "$white"
+        }
+      ]
+    },
+    {
+      "name": "white-on-black",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$white"
+        },
+        {
+          "name": "background-color",
+          "value": "$black"
+        }
+      ]
+    },
+    {
+      "name": "gray-on-white",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$gray"
+        },
+        {
+          "name": "background-color",
+          "value": "$white"
+        }
+      ],
+      "contrast": "3.9, bold: 14pt (large 1), normal: 18pt (large 3)"
+    },
+    {
+      "name": "lightgray-on-white",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$lightgray"
+        },
+        {
+          "name": "background-color",
+          "value": "$white"
+        }
+      ]
+    },
+    {
+      "name": "darkgray-on-white",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$darkgray"
+        },
+        {
+          "name": "background-color",
+          "value": "$white"
+        }
+      ]
+    }
+  ]
+}

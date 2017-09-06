@@ -1,0 +1,17 @@
+@mixin list-expandable__item {
+  display: flex;
+  align-items: center;
+
+  .circle {
+    @include circle($lem * 1.5, thin);
+    margin-right: $lem / 2;
+  }
+
+  &--active {
+    @include list-expandable__item--active;
+  }
+
+  &--inactive {
+    @include list-expandable__item--inactive;
+  }
+}

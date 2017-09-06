@@ -1,0 +1,16 @@
+@mixin figure-with-text-around-circle--flip {
+  .figure {
+    @include animation(flip, 1s, true);
+    //-webkit-animation-name: nothing; // ios8 fix
+  }
+}
+
+@include keyframes(flip) {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(180deg);
+  }
+}

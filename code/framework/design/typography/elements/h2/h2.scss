@@ -1,0 +1,7 @@
+@mixin h2 {
+  h2 {
+    @include text-style(title);
+    margin: $lem 0;
+    word-wrap: break-word;
+  }
+}

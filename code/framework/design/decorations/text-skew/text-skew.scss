@@ -1,0 +1,16 @@
+@mixin text-skew($deg: 5deg) {
+  @include colors(black-on-white);
+  border: $lem / 8 solid;
+  transform: skew($deg);
+  padding: $lem;
+  margin-top: $lem;
+  margin-bottom: $lem;
+
+  @if ($deg == 0deg) {
+    border: none;
+    transform: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,29 @@
+@mixin figure-with-text-around-circle($width: 12.5em, $number-of-chars: 100, $flip: true) {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //width: $width;
+  @include max-width($width);
+  height: $width;
+
+  .figure {
+    @include figure-with-text-around-circle__figure($width / 1.5);
+  }
+
+  .text-around-circle {
+    @include figure-with-text-around-circle__text-around-circle($width, $number-of-chars);
+
+    a {
+      @include link(black-on-white, black-on-white, black-on-white);
+    }
+  }
+
+  @include figure-with-text-around-circle--portrait;
+
+  @if ($flip == true) {
+    @include figure-with-text-around-circle--flip;
+  }
+}

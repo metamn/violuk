@@ -1,0 +1,5 @@
+@mixin text-rolling__chars--matrix {
+  .char {
+    margin: $lem / 2 $lem / 2 0 0;
+  }
+}

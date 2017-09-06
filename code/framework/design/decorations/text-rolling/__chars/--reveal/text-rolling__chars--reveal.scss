@@ -1,0 +1,25 @@
+@mixin text-rolling__chars--reveal($count) {
+  .char {
+    opacity: 0;
+    $duration: 0.1s;
+
+    @for $i from 1 to $count + 2 {
+      &--#{$i - 1} {
+        @include animation(text-rolling-chars-reveal, $duration);
+        animation-delay: ($i - 1) * $duration;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}
+
+@include keyframes(text-rolling-chars-reveal) {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}

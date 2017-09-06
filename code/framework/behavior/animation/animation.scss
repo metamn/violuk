@@ -1,0 +1,21 @@
+// Animation
+//
+// https://www.smashingmagazine.com/2011/05/an-introduction-to-css3-keyframe-animations/
+// https://css-tricks.com/almanac/properties/a/animation/
+// http://codepen.io/mavame/pen/tJfLI
+//
+// Example
+//
+// @include animation('slide-down', 5s);
+//
+
+// Styleguide animation
+@mixin animation($keyframe, $duration: 0.3s, $continuous: false, $direction: normal) {
+  animation-name: $keyframe;
+  animation-duration: $duration;
+  animation-direction: $direction;
+
+  @if ($continuous != false) {
+    animation-iteration-count: infinite;
+  }
+}

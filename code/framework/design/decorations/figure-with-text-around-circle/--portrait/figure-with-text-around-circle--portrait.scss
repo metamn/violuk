@@ -1,0 +1,5 @@
+@mixin figure-with-text-around-circle--portrait {
+  @include portrait {
+    @include scale(small-1);
+  }
+}

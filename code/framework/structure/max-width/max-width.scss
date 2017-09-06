@@ -1,0 +1,12 @@
+@mixin max-width($width) {
+  max-width: $width;
+  width: 100%;
+
+  @include landscape {
+    min-width: $width;
+  }
+
+  @include tablet {
+    min-width: auto;
+  }
+}

@@ -1,0 +1,30 @@
+// Custom cursor
+//
+// - https://developer.mozilla.org/en-US/docs/Web/CSS/cursor
+//
+// $item - where to apply the new cursor
+// $cursor-image-name - the name of the image to replace the cursor. Without extension
+// $x, $y - adjust the top of the new cursor to match the top of the old cursor. Otherwise on cursor change it will flip
+// $default - the fallback cursor type if the image is not supported. It can be any CSS cursor property
+//
+// Experimental
+//
+// 1. Size
+// - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_User_Interface/Using_URL_values_for_the_cursor_property
+// - large .PNGs (> 64x64) are breaking all browsers under OSX while working over all other platforms
+// - FF, Chrome support cursors up to 128x128px
+//
+// 2. IE, Edge
+// - https://webdesign.tutsplus.com/articles/everything-you-need-to-know-about-the-css-cursor-rule--webdesign-9441
+// - they support only .CUR files and not .PNG
+//
+// Styleguide cursor
+@mixin cursor($item, $cursor-image-name, $x: 0, $y: 0, $default: auto) {
+  #{$item} {
+    &:hover {
+      cursor: url({{ site.url }}{{ site.images }}#{$cursor-image-name}.png) #{$x} #{$y},
+              url({{ site.url }}{{ site.images }}#{$cursor-image-name}.cur),
+              #{$default};
+    }
+  }
+}

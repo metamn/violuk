@@ -1,0 +1,56 @@
+// Arrow with saquo
+//
+// Done in pure CSS
+//
+// $size - starting from $lem. All sizes above working well. If the size of the arrow is reduced by the parent container everything will be distorted
+//
+// Styleguide arrow-with-saquo
+@mixin arrow-with-saquo($direction: right, $size: $lem * 3) {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  width: $size;
+
+  &__line {
+    width: calc(#{$size - $size / 3});
+    @include border--thin;
+  }
+
+  .saquo {
+    @include saquo($direction: $direction, $size: $size / 3);
+  }
+
+  @if ($direction == right) {
+    @include arrow-with-saquo--right(-$size / 3);
+  }
+
+  @if ($direction == left) {
+    @include arrow-with-saquo--left(-$size / 3);
+  }
+
+  @if ($direction == top) {
+    @include arrow-with-saquo--top(-$size / 3);
+  }
+
+  @if ($direction == bottom) {
+    @include arrow-with-saquo--bottom(-$size / 3);
+  }
+
+  &--right {
+    @include arrow-with-saquo--right(-$size / 3);
+  }
+
+  &--left {
+    @include arrow-with-saquo--left(-$size / 3);
+  }
+
+  &--top {
+    @include arrow-with-saquo--top(-$size / 3);
+  }
+
+  &--bottom {
+    @include arrow-with-saquo--bottom(-$size / 3);
+  }
+}

@@ -1,0 +1,7 @@
+@mixin arrow-with-saquo--bottom($translate) {
+  transform: rotate(90deg);
+
+  .saquo {
+    transform: translate($translate);
+  };
+}

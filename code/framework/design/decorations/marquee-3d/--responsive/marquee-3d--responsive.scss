@@ -1,0 +1,5 @@
+@mixin marquee-3d--responsive {
+  @include mobile {
+    transform: scale(.5);
+  }
+}

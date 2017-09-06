@@ -1,0 +1,14 @@
+@mixin ul--body-text {
+  ul,
+  .ul {
+    list-style-type: square;
+    margin-left: $lem + $lem / 4; // Align perfectly to left
+    margin-bottom: $lem;
+
+    li,
+    .li {
+      margin-top: $lem / 2;
+    }
+  }
+
+}

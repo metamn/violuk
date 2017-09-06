@@ -1,0 +1,21 @@
+@mixin text-around-circle__chars($size, $num-letters: 100, $angle-span: 360deg, $angle-offset: 0deg) {
+  position: relative;
+  display: flex;
+  width: $size;
+  height: $size;
+
+  .char {
+    @include uppercase(1px);
+    position: absolute;
+    height: $size;
+    width: $size / 20;
+  }
+
+  $angle-per-char: $angle-span / $num-letters;
+
+  @for $i from 0 through 100 {
+    .char--#{$i} {
+      transform: rotate($angle-offset + $angle-per-char * $i);
+    }
+  }
+}

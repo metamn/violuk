@@ -1,0 +1,26 @@
+{
+  "url": "/",
+  "urlx": "http://violuk.com",
+  "title": "Violuk",
+  "description": "Curating on new trajectories",
+  "images": "assets/images/",
+  "scripts": "assets/scripts/",
+  "videos": "assets/videos/",
+  "styles": "assets/styles/",
+  "javascripts": {
+    "header": [
+      {
+        "file": "https://use.typekit.net/syb1owt.js",
+        "type": "external"
+      },
+      {
+        "file": "vendors.js"
+      }
+    ],
+    "footer": [
+      {
+        "file": "site.footer.min.js"
+      }
+    ]
+  }
+}

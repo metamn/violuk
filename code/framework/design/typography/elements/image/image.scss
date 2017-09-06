@@ -1,0 +1,31 @@
+@mixin image {
+  .figure {
+    @include figure($figcaption: on);
+    @include background-image-dotted;
+    margin: $lem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .picture {
+      padding: $lem * 3;
+
+      @include portrait {
+        padding: $lem;
+      }
+
+      @include mobile {
+        padding: $lem / 2;
+      }
+    }
+
+    .figcaption {
+      @include text-style(figcaption);
+
+      .link {
+        font-weight: 300;
+      }
+    }
+  }
+}

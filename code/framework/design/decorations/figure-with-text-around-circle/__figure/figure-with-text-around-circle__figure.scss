@@ -1,0 +1,4 @@
+@mixin figure-with-text-around-circle__figure($width) {
+  @include figure;
+  @include circle($width);
+}

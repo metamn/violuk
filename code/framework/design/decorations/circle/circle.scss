@@ -1,0 +1,19 @@
+@mixin circle($width: $lem, $border: none) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: $width;
+  height: $width;
+
+  // do not shrink the circle when used with flexbox
+  min-width: $width;
+  min-height: $width;
+
+  border-radius: 50%;
+
+  @if $border != none {
+    @include border($border, all);
+  }
+
+}

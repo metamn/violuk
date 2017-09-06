@@ -1,0 +1,6 @@
+@mixin button-with-triangle--right {
+  .button-with-triangle__text {
+    padding-left: $lem / 2;
+    padding-right: $lem * 2 - $lem / 2;
+  }
+}

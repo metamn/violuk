@@ -1,0 +1,9 @@
+@mixin list-item__thumb {
+  .figure {
+    @include figure;
+
+    .img {
+      background: $gray;
+    }
+  }
+}

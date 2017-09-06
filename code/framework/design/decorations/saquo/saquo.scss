@@ -1,0 +1,60 @@
+// Simple quote (&lsaquo, >)
+//
+// Done in pure CSS
+//
+// $size - starting from $lem / 4. From size $lem * 3 the `translate()` value should be changed.
+//
+// Styleguide saquo
+@mixin saquo($direction: right, $size: $lem) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: $size;
+  height: $size;
+
+  &__line--top,
+  &__line--bottom {
+    @include border--thin;
+  }
+
+  &__line--top {
+    transform: rotate(45deg) translate($size / 5.5);
+  }
+
+  &__line--bottom {
+    transform: rotate(-45deg) translate($size / 5.5);
+  }
+
+  @if ($direction == right) {
+    @include saquo--right;
+  }
+
+  @if ($direction == left) {
+    @include saquo--left;
+  }
+
+  @if ($direction == top) {
+    @include saquo--top;
+  }
+
+  @if ($direction == bottom) {
+    @include saquo--bottom;
+  }
+
+  &--right {
+    @include saquo--right;
+  }
+
+  &--left {
+    @include saquo--left;
+  }
+
+  &--top {
+    @include saquo--top;
+  }
+
+  &--bottom {
+    @include saquo--bottom;
+  }
+}
