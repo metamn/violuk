@@ -7,7 +7,7 @@
   line-height: $lem * 2;
   letter-spacing: $lem / 2;
   color: blue;
-  mix-blend-mode: overlay;
+  mix-blend-mode: color-dodge; // difference !!!
 
   position: absolute;
   top: 0;

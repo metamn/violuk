@@ -2,4 +2,8 @@
   .logo {
     @include logo;
   }
+
+  .strapline {
+    @include strapline;
+  }
 }

@@ -1,6 +1,7 @@
 @mixin logo {
   @include border(thin, bottom);
-  
+  padding-bottom: $lem / 4;
+
   .link {
     @include link(black-on-white, black-on-white, black-on-white);
     @include link--not-underlined;
