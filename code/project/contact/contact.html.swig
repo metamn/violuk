@@ -21,7 +21,7 @@
     <ul class="ul">
       {% for s in contact.social %}
         <li class="li">
-          {% set link = { link: s, title: s } %}
+          {% set link = { link: s, title: s, type: "external" } %}
           {% include '../../framework/design/typography/elements/link/link.html.swig' %}
         </li>
       {% endfor %}
