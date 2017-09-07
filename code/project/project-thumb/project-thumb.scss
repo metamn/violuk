@@ -1,4 +1,8 @@
 @mixin project-thumb {
   display: flex;
   flex-wrap: wrap;
+
+  .img {
+    @include img;
+  }
 }

@@ -15,6 +15,6 @@
   };
 
   @include desktop {
-    @include grid(4, $lem, $lem);
+    @include grid(3, $lem, $lem);
   };
 }

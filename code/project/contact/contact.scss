@@ -1,3 +1,15 @@
 @mixin contact {
-  @include grid(1, 0px, $lem);
+  width: 100%;
+  
+  @include mobile {
+    @include grid(1, 0px, $lem);
+  }
+
+  @include tablet {
+    @include grid(2, $lem, $lem);
+  }
+
+  @include landscape {
+    @include grid(4, $lem, $lem);
+  }
 }
