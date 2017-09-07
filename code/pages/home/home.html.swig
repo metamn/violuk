@@ -1,10 +1,9 @@
 {% extends '../templates/default/default.html.swig' %}
 {% block content %}
 
-  <section class="home">
-    <h3>Home</h3>
-
-    {% include '../../project/intro/intro.html.swig' %}
-  </section>
+  {% include '../../project/intro/intro.html.swig' %}
+  {% include '../../project/project-list/project-list.html.swig' %}
+  {% include '../../project/contact/contact.html.swig' %}
+  {% include '../../project/projects/projects.html.swig' %}
 
 {% endblock %}

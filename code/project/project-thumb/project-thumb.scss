@@ -1,21 +1,4 @@
 @mixin project-thumb {
-  //@include border(normal, top);
-  //@include border(normal, left);
-  padding-top: $lem * 2;
-
-  &__title {
-    @include title;
-    //padding-top: $lem;
-  }
-
-  &__year {
-    @include text-style(name);
-  }
-
-
-  &__title,
-  &__year {
-    //@include border(thin, left);
-    //padding-left: $lem;
-  }
+  display: flex;
+  flex-wrap: wrap;
 }

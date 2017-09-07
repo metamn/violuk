@@ -1,0 +1,9 @@
+@mixin project-list {
+  &__title {
+    @include title;
+  }
+
+  .project-list-item {
+    @include project-list-item;
+  }
+}

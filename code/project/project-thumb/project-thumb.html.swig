@@ -1,7 +1,7 @@
 <article class="project-thumb">
-  <span class="project-thumb__year">{{ project.year }}</span>
-  <h3 class="project-thumb__title">
-    {{ project.title }}
-  </h3>
+  <h3>{{ project.title }}</h3>
 
+  {% for image in project.images %}
+    <img class="img" src="{{ site.url }}{{ site.images }}{{ image }}" alt="{{ project.title }}">
+  {% endfor %}
 </article>

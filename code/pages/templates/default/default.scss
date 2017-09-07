@@ -20,10 +20,6 @@ html {
       @include header;
     }
 
-    .projects {
-      @include projects;
-    }
-
     .footer {
       @include footer;
     }

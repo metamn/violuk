@@ -5,6 +5,18 @@ html {
         @include intro;
       }
 
+      .contact {
+        @include contact;
+      }
+
+      .project-list {
+        @include project-list;
+      }
+
+      .projects {
+        @include projects;
+      }
+
       @include home__grid;
     }
   }
