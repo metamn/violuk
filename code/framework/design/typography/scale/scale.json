@@ -6,11 +6,11 @@
       "properties": [
         {
           "name": "font-size",
-          "value": "100%"
+          "value": "200%"
         },
         {
           "name": "line-height",
-          "value": "1.48"
+          "value": "1"
         }
       ]
     },

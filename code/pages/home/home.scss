@@ -4,6 +4,8 @@ html {
       .intro {
         @include intro;
       }
+
+      @include home__grid;
     }
   }
 }

@@ -1,0 +1,17 @@
+@mixin home__grid {
+  @include mobile {
+    @include grid(1, 0px, $lem);
+  }
+
+  @include tablet {
+    @include grid(2, $lem, $lem);
+  };
+
+  @include laptop {
+    @include grid(3, $lem, $lem);
+  };
+
+  @include desktop {
+    @include grid(4, $lem, $lem);
+  };
+}

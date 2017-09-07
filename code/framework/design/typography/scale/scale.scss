@@ -9,7 +9,7 @@
 // - it is based on the default font size and line height
 // - $lem is used for spacing elements on the webpage like margins and padding
 
-$lem: 1.48em;
+$lem: 1em;
 
 
 
@@ -19,8 +19,8 @@ $lem: 1.48em;
 
   // The default font size and line height
   @if ($variant == 'default') {
-    font-size: 100%;
-    line-height: 1.48;
+    font-size: 200%;
+    line-height: 1;
     
     
   }
@@ -94,8 +94,8 @@ $lem: 1.48em;
 // Typographic scale classes
 
 .scale--default {
-  font-size: 100%;
-  line-height: 1.48;
+  font-size: 200%;
+  line-height: 1;
   
   
 }
