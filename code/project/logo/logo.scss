@@ -1,1 +1,7 @@
-@mixin logo {}
+@mixin logo {
+  .link {
+    @include link(black-on-white, black-on-white, black-on-white);
+    @include link--not-underlined;
+    @include text-style(logo);
+  }
+}

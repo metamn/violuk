@@ -20,7 +20,7 @@ $text-block-width: 25em;
   // Default
   // - The basic settings for a text.
   @if ($variant == 'default') {
-    @include font(nimbus-sans-regular);
+    @include font(mostra-nuova-regular);
     @include scale(default);
     @include colors(black-on-white);
     
@@ -42,7 +42,7 @@ $text-block-width: 25em;
   // Article body text
   // - Settings for very long text.
   @if ($variant == 'article-body-text') {
-    @include font(nimbus-sans-light);
+    @include font(mostra-nuova-light);
     @include scale(large-1);
     @include p;
     @include h2;
@@ -61,10 +61,10 @@ $text-block-width: 25em;
     
   }
   
-  // Metamn
-  // - Settings for the Metamn logo.
-  @if ($variant == 'metamn') {
-    @include font(silkscreen-regular);
+  // Logo
+  // - Settings for the logo.
+  @if ($variant == 'logo') {
+    @include font(platelet-regular);
     @include scale(large-1);
     
     
@@ -85,7 +85,7 @@ $text-block-width: 25em;
   // Name
   // - A person&#39;s name
   @if ($variant == 'name') {
-    @include font(nimbus-sans-bold);
+    @include font(mostra-nuova-bold);
     @include uppercase($lem / 4);
     @include scale(small-1);
     @include colors(white-on-black);
@@ -99,7 +99,7 @@ $text-block-width: 25em;
   // Figcaption
   // - The caption of a figure, code block etc.
   @if ($variant == 'figcaption') {
-    @include font(nimbus-sans-light);
+    @include font(mostra-nuova-light);
     @include scale(small-1);
     @include colors(black-on-white);
     
@@ -110,7 +110,7 @@ $text-block-width: 25em;
   // Button with triangle
   // - Strong text, call for action.
   @if ($variant == 'button-with-triangle') {
-    @include font(nimbus-sans-black);
+    @include font(mostra-nuova-black);
     @include uppercase(1.25px);
     @include colors(white-on-black);
     
@@ -122,7 +122,7 @@ $text-block-width: 25em;
   // Button with arrow triangle
   // - Strong text, call for action.
   @if ($variant == 'button-with-arrow-triangle') {
-    @include font(nimbus-sans-black);
+    @include font(mostra-nuova-black);
     @include uppercase(1.25px);
     @include border(normal, all);
     
@@ -138,7 +138,7 @@ $text-block-width: 25em;
 // Text style classes
 
 .text-style--default {
-  @include font(nimbus-sans-regular);
+  @include font(mostra-nuova-regular);
   @include scale(default);
   @include colors(black-on-white);
   
@@ -156,7 +156,7 @@ $text-block-width: 25em;
 }
 
 .text-style--article-body-text {
-  @include font(nimbus-sans-light);
+  @include font(mostra-nuova-light);
   @include scale(large-1);
   @include p;
   @include h2;
@@ -175,8 +175,8 @@ $text-block-width: 25em;
   
 }
 
-.text-style--metamn {
-  @include font(silkscreen-regular);
+.text-style--logo {
+  @include font(platelet-regular);
   @include scale(large-1);
   
   
@@ -193,7 +193,7 @@ $text-block-width: 25em;
 }
 
 .text-style--name {
-  @include font(nimbus-sans-bold);
+  @include font(mostra-nuova-bold);
   @include uppercase($lem / 4);
   @include scale(small-1);
   @include colors(white-on-black);
@@ -205,7 +205,7 @@ $text-block-width: 25em;
 }
 
 .text-style--figcaption {
-  @include font(nimbus-sans-light);
+  @include font(mostra-nuova-light);
   @include scale(small-1);
   @include colors(black-on-white);
   
@@ -214,7 +214,7 @@ $text-block-width: 25em;
 }
 
 .text-style--button-with-triangle {
-  @include font(nimbus-sans-black);
+  @include font(mostra-nuova-black);
   @include uppercase(1.25px);
   @include colors(white-on-black);
   
@@ -224,7 +224,7 @@ $text-block-width: 25em;
 }
 
 .text-style--button-with-arrow-triangle {
-  @include font(nimbus-sans-black);
+  @include font(mostra-nuova-black);
   @include uppercase(1.25px);
   @include border(normal, all);
   

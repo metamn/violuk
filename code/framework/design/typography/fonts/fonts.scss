@@ -8,18 +8,18 @@
 // Styleguide fonts
 
 
-// Nimbus Sans
+// Mostra Nuova
 // - The default typeface, sans-serif
 // - character set: Full character set, with OpenType Features
 // - served from Typekit
-// - styles and weights: Light, Light Italic, Regular, Bold, Black, 
+// - styles and weights: Thin, Light, Regular, Bold, Heavy, Black, 
 
 
-// Silkscreen
+// Platelet
 // - The logo typeface, sans-serif
 // - character set: English, with OpenType Features
 // - served from Typekit
-// - styles and weights: Regular, 
+// - styles and weights: Thin, Regular, Heavy, 
 
 
 
@@ -27,39 +27,57 @@
 // The font mixin
 @mixin font($variant) {
 
-  @if ($variant == 'nimbus-sans-light') {
-    font-family: 'nimbus-sans', sans-serif;
+  @if ($variant == 'mostra-nuova-thin') {
+    font-family: 'mostra-nuova', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @if ($variant == 'mostra-nuova-light') {
+    font-family: 'mostra-nuova', sans-serif;
     font-weight: 300;
     font-style: normal;
   }
   
-  @if ($variant == 'nimbus-sans-light-italic') {
-    font-family: 'nimbus-sans', sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  @if ($variant == 'nimbus-sans-regular') {
-    font-family: 'nimbus-sans', sans-serif;
+  @if ($variant == 'mostra-nuova-regular') {
+    font-family: 'mostra-nuova', sans-serif;
     font-weight: 400;
     font-style: normal;
   }
   
-  @if ($variant == 'nimbus-sans-bold') {
-    font-family: 'nimbus-sans', sans-serif;
+  @if ($variant == 'mostra-nuova-bold') {
+    font-family: 'mostra-nuova', sans-serif;
     font-weight: 700;
     font-style: normal;
   }
   
-  @if ($variant == 'nimbus-sans-black') {
-    font-family: 'nimbus-sans', sans-serif;
+  @if ($variant == 'mostra-nuova-heavy') {
+    font-family: 'mostra-nuova', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @if ($variant == 'mostra-nuova-black') {
+    font-family: 'mostra-nuova', sans-serif;
     font-weight: 900;
     font-style: normal;
   }
   
-  @if ($variant == 'silkscreen-regular') {
-    font-family: 'silkscreen', sans-serif;
+  @if ($variant == 'platelet-thin') {
+    font-family: 'platelet', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @if ($variant == 'platelet-regular') {
+    font-family: 'platelet', sans-serif;
     font-weight: 400;
+    font-style: normal;
+  }
+  
+  @if ($variant == 'platelet-heavy') {
+    font-family: 'platelet', sans-serif;
+    font-weight: 700;
     font-style: normal;
   }
   
@@ -68,39 +86,57 @@
 
 // Font classes
 
-.nimbus-sans-light {
-  font-family: 'nimbus-sans', sans-serif;
+.mostra-nuova-thin {
+  font-family: 'mostra-nuova', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.mostra-nuova-light {
+  font-family: 'mostra-nuova', sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
-.nimbus-sans-light-italic {
-  font-family: 'nimbus-sans', sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.nimbus-sans-regular {
-  font-family: 'nimbus-sans', sans-serif;
+.mostra-nuova-regular {
+  font-family: 'mostra-nuova', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.nimbus-sans-bold {
-  font-family: 'nimbus-sans', sans-serif;
+.mostra-nuova-bold {
+  font-family: 'mostra-nuova', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.nimbus-sans-black {
-  font-family: 'nimbus-sans', sans-serif;
+.mostra-nuova-heavy {
+  font-family: 'mostra-nuova', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.mostra-nuova-black {
+  font-family: 'mostra-nuova', sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 
-.silkscreen-regular {
-  font-family: 'silkscreen', sans-serif;
+.platelet-thin {
+  font-family: 'platelet', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.platelet-regular {
+  font-family: 'platelet', sans-serif;
   font-weight: 400;
+  font-style: normal;
+}
+
+.platelet-heavy {
+  font-family: 'platelet', sans-serif;
+  font-weight: 700;
   font-style: normal;
 }
 

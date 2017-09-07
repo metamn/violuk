@@ -3,11 +3,11 @@
     {
       "name": "Default",
       "description": "The basic settings for a text.",
-      "based_on": "Nimbus Sans",
+      "based_on": "Mostra Nuova",
       "mixins": [
         {
           "name": "font",
-          "value": "nimbus-sans-regular"
+          "value": "mostra-nuova-regular"
         },
         {
           "name": "scale",
@@ -28,7 +28,7 @@
     {
       "name": "Body text",
       "description": "Settings for text blocks.",
-      "based_on": "Nimbus Sans",
+      "based_on": "Mostra Nuova",
       "mixins": [
         {
           "name": "p"
@@ -44,11 +44,11 @@
     {
       "name": "Article body text",
       "description": "Settings for very long text.",
-      "based_on": "Nimbus Sans",
+      "based_on": "Mostra Nuova",
       "mixins": [
         {
           "name": "font",
-          "value": "nimbus-sans-light"
+          "value": "mostra-nuova-light"
         },
         {
           "name": "scale",
@@ -93,13 +93,13 @@
       ]
     },
     {
-      "name": "Metamn",
-      "description": "Settings for the Metamn logo.",
-      "based_on": "Silkscreen",
+      "name": "Logo",
+      "description": "Settings for the logo.",
+      "based_on": "Platelet",
       "mixins": [
         {
           "name": "font",
-          "value": "silkscreen-regular"
+          "value": "platelet-regular"
         },
         {
           "name": "scale",
@@ -110,7 +110,7 @@
     {
       "name": "Title",
       "description": "Title",
-      "based_on": "Nimbus Sans",
+      "based_on": "Mostra Nuova",
       "mixins": [
         {
           "name": "uppercase",
@@ -131,11 +131,11 @@
     {
       "name": "Name",
       "description": "A person's name",
-      "based_on": "Nimbus Sans Bold",
+      "based_on": "Mostra Nuova Bold",
       "mixins": [
         {
           "name": "font",
-          "value": "nimbus-sans-bold"
+          "value": "mostra-nuova-bold"
         },
         {
           "name": "uppercase",
@@ -164,11 +164,11 @@
     {
       "name": "Figcaption",
       "description": "The caption of a figure, code block etc.",
-      "based_on": "Nimbus Sans Light",
+      "based_on": "Mostra Nuova Light",
       "mixins": [
         {
           "name": "font",
-          "value": "nimbus-sans-light"
+          "value": "mostra-nuova-light"
         },
         {
           "name": "scale",
@@ -183,11 +183,11 @@
     {
       "name": "Button with triangle",
       "description": "Strong text, call for action.",
-      "based_on": "Nimbus Sans Black",
+      "based_on": "Mostra Nuova Black",
       "mixins": [
         {
           "name": "font",
-          "value": "nimbus-sans-black"
+          "value": "mostra-nuova-black"
         },
         {
           "name": "uppercase",
@@ -208,11 +208,11 @@
     {
       "name": "Button with arrow triangle",
       "description": "Strong text, call for action.",
-      "based_on": "Nimbus Sans Black",
+      "based_on": "Mostra Nuova Black",
       "mixins": [
         {
           "name": "font",
-          "value": "nimbus-sans-black"
+          "value": "mostra-nuova-black"
         },
         {
           "name": "uppercase",
