@@ -1,5 +1,15 @@
 @mixin project__title {
   width: 100%;
-  
+
   @include title;
+  @include scale(large-8);
+  @include font(mostra-nuova-black);
+  line-height: $lem * 2;
+  letter-spacing: $lem / 2;
+  color: blue;
+  mix-blend-mode: overlay;
+
+  position: absolute;
+  top: 0;
+  overflow: hidden;
 }

@@ -1,6 +1,10 @@
 @mixin contact {
   width: 100%;
-  
+
+  .link {
+    @include link;
+  }
+
   @include mobile {
     @include grid(1, 0px, $lem);
   }
