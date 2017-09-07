@@ -1,0 +1,14 @@
+@mixin project__thumbs {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  .image {
+    max-width: 45%;
+
+    .img {
+      @include img;
+    }
+  }
+}

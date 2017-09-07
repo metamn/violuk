@@ -1,0 +1,13 @@
+@mixin project {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__title {
+    @include project__title;
+  }
+
+  &__thumbs {
+    @include project__thumbs;
+  }
+}
