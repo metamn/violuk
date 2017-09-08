@@ -1,0 +1,5 @@
+@mixin project__description {
+  .text {
+    @include text-style(body-text);
+  }
+}

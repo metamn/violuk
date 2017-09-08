@@ -13,6 +13,14 @@
     @include project__thumbs;
   }
 
+  &__description {
+    @include project__description;
+  }
+
+  &__meta {
+    @include project__meta;
+  }
+
   &--yona-friedman-the-dilution-of-architecture {
     @include project--yona-friedman-the-dilution-of-architecture;
   }
