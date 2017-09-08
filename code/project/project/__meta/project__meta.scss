@@ -1,6 +1,25 @@
 @mixin project__meta {
   order: 4;
 
+  .ul {
+    @include ul;
+
+    .li {
+      display: flex;
+      align-items: flex-start;
+      min-height: $lem * 4;
+
+      .key {
+        transform: rotate(-90deg);
+        width: 15%;
+      }
+
+      .value {
+        width: 80%;
+      }
+    }
+  }
+
   @include portrait {
     padding: $lem 0;
     order: 2;
