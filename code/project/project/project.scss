@@ -5,6 +5,10 @@
 
   position: relative;
 
+  @include portrait {
+    margin-bottom: $lem;
+  }
+
   &__title {
     @include project__title;
   }

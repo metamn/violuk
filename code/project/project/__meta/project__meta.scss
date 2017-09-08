@@ -1,1 +1,12 @@
-@mixin project__meta {}
+@mixin project__meta {
+  order: 4;
+
+  @include portrait {
+    padding: $lem 0;
+    order: 2;
+  }
+
+  @include landscape {
+    margin-left: $lem;
+  }
+}

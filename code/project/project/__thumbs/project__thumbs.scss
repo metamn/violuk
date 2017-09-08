@@ -1,11 +1,13 @@
 @mixin project__thumbs {
   width: 100%;
+  order: 2;
 
   display: flex;
   flex-wrap: wrap;
 
   .image {
     max-width: 45%;
+    line-height: 0;
 
     .img {
       @include img;

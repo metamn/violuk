@@ -1,4 +1,6 @@
 @mixin project__description {
+  order: 3;
+  
   .text {
     @include text-style(body-text);
   }

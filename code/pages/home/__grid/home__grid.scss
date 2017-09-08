@@ -3,6 +3,10 @@
   .container {
     @include mobile {
       @include grid(1, 0px, $lem);
+
+      .contact {
+        order: 100;
+      }
     }
 
     @include tablet {
