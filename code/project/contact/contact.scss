@@ -1,6 +1,4 @@
 @mixin contact {
-  width: 100%;
-
   .link {
     @include link;
   }

@@ -1,6 +1,5 @@
 @mixin home__grid {
-
-  // wee need container because browsersync injects scripts into body which breaks the grid
+  // We need container because browsersync injects scripts into body which breaks the grid
   .container {
     @include mobile {
       @include grid(1, 0px, $lem);
@@ -17,5 +16,13 @@
     @include desktop {
       @include grid(3, $lem, $lem);
     };
+
+    // Overwriting the grid
+    .contact,
+    .projects,
+    .footer {
+      width: 100% !important;
+      margin-right: 0 !important;
+    }
   }
 }
