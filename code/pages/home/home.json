@@ -53,10 +53,11 @@
       "title": "Do Not Trust The Mirror",
       "link": "",
       "role": "",
-      "type": "",
+      "type": "Master Research and Graduation Project 2013-2016",
       "venue": "",
       "location": "",
       "year": "2016",
+      "awards": "New HEADs–Fondation BNP Paribas Art Awards, nominee",
       "description": [
         "A good few sentences / paragraphs here ...",
         "Each on a new line liek this"
@@ -76,13 +77,18 @@
       "title": "Bernar Venet: MetaMetria",
       "link": "",
       "role": "curator",
-      "type": "",
+      "type": "Budapest Public Sculpture Project",
       "venue": "Vass Collection",
       "location": "Veszprem, H",
       "year": "2015",
       "description": [
         "A good few sentences / paragraphs here ...",
         "Each on a new line liek this"
+      ],
+      "images": [
+        "bernar-venet-metametria-1.jpg",
+        "bernar-venet-metametria-2.jpg",
+        "bernar-venet-metametria-3.jpg"
       ]
     }
   ]
