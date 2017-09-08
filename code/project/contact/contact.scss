@@ -1,6 +1,16 @@
 @mixin contact {
   > * {
     @include scale(small-1);
+
+    @include portrait {
+      @include border(normal, all);
+      border-radius: 50%;
+      padding: $lem;
+
+      .ul {
+        @include ul;
+      }
+    }
   }
 
   .link {
