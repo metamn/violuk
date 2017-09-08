@@ -15,6 +15,10 @@
   &__year {
     transform: rotate(-90deg);
     width: 20%;
+
+    @include tablet {
+      width: 15%;
+    }
   }
 
 }

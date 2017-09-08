@@ -15,6 +15,11 @@
 
     @include tablet {
       @include grid(2, $lem, $lem);
+
+      .project-list {
+        width: 100%;
+        margin-right: 0;
+      }
     };
 
     @include laptop {
