@@ -11,6 +11,10 @@
 
 $lem: 1em;
 
+@include mobile { 
+  $lem: 1.25em;
+}
+
 
 
 
@@ -22,6 +26,12 @@ $lem: 1em;
     font-size: 200%;
     line-height: 1;
     
+    
+    @include mobile {
+      font-size: 150%;
+      line-height: 1.25;
+      
+    }
     
   }
 
@@ -97,6 +107,12 @@ $lem: 1em;
   font-size: 200%;
   line-height: 1;
   
+  
+  @include mobile {
+    font-size: 150%;
+    line-height: 1.25;
+    
+  }
   
 }
 

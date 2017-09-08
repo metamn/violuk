@@ -24,7 +24,7 @@ $text-block-width: 25em;
     @include scale(default);
     @include colors(black-on-white);
     
-    letter-spacing: 1.1px;
+    letter-spacing: 1px;
     
     
   }
@@ -142,7 +142,7 @@ $text-block-width: 25em;
   @include scale(default);
   @include colors(black-on-white);
   
-  letter-spacing: 1.1px;
+  letter-spacing: 1px;
   
   
 }

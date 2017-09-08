@@ -12,6 +12,21 @@
           "name": "line-height",
           "value": "1"
         }
+      ],
+      "responsive": [
+        {
+          "breakpoint": "mobile",
+          "properties": [
+            {
+              "name": "font-size",
+              "value": "150%"
+            },
+            {
+              "name": "line-height",
+              "value": "1.25"
+            }
+          ]
+        }
       ]
     },
     {

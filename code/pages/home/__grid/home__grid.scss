@@ -4,8 +4,12 @@
     @include mobile {
       @include grid(1, 0px, $lem);
 
-      .contact {
-        order: 100;
+      .intro {
+        padding: $lem 0;
+      }
+
+      .projects {
+        padding-top: $lem;
       }
     }
 
@@ -27,6 +31,13 @@
     .footer {
       width: 100% !important;
       margin-right: 0 !important;
+    }
+
+
+    @include portrait {
+      .contact {
+        order: 100;
+      }
     }
   }
 }
