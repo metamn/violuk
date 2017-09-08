@@ -7,34 +7,51 @@
       <span class="value">{{ project.title }}</span>
     </li>
 
-    <li class="li">
-      <span class="key">role:</span>
-      <span class="value">{{ project.role }}</span>
-    </li>
+    {% if project.role %}
+      <li class="li">
+        <span class="key">role:</span>
+        <span class="value">{{ project.role }}</span>
+      </li>
+    {% endif %}
 
-    <li class="li">
-      <span class="key">type:</span>
-      <span class="value">{{ project.type }}</span>
-    </li>
+    {% if project.type %}
+      <li class="li">
+        <span class="key">type:</span>
+        <span class="value">{{ project.type }}</span>
+      </li>
+    {% endif %}
 
-    <li class="li">
-      <span class="key">venue:</span>
-      <span class="value">{{ project.venue }}</span>
-    </li>
+    {% if project.venue %}
+      <li class="li">
+        <span class="key">venue:</span>
+        <span class="value">{{ project.venue }}</span>
+      </li>
+    {% endif %}
 
-    <li class="li">
-      <span class="key">location:</span>
-      <span class="value">{{ project.location }}</span>
-    </li>
+    {% if project.location %}
+      <li class="li">
+        <span class="key">location:</span>
+        <span class="value">{{ project.location }}</span>
+      </li>
+    {% endif %}
 
     <li class="li">
       <span class="key">year:</span>
       <span class="value">{{ project.year }}</span>
     </li>
 
-    <li class="li">
-      <span class="key">awards:</span>
-      <span class="value">{{ project.awards }}</span>
-    </li>
+    {% if project.awards %}
+      <li class="li">
+        <span class="key">awards:</span>
+        <span class="value">{{ project.awards }}</span>
+      </li>
+    {% endif %}
+
+    {% if project.link %}
+      <li class="li">
+        <span class="key">link:</span>
+        <span class="value">{{ project.link }}</span>
+      </li>
+    {% endif %}
   </ul>
 </aside>
