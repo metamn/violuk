@@ -6,5 +6,5 @@
 #}
 
 {% macro classname(string) -%}
-  {{ string | lower | replace(',', '', 'g') | replace('&', 'and', 'g') | replace("'", '', 'g') | replace('"', '', 'g') | replace(' ', '-', 'g') | replace('!', '', 'g')  | replace('[?]', '', 'g') }}
+  {{ string | lower | replace(':', '', 'g') | replace(',', '', 'g') | replace('&', 'and', 'g') | replace("'", '', 'g') | replace('"', '', 'g') | replace(' ', '-', 'g') | replace('!', '', 'g')  | replace('[?]', '', 'g') }}
 {%- endmacro %}

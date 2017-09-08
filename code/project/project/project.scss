@@ -12,4 +12,16 @@
   &__thumbs {
     @include project__thumbs;
   }
+
+  &--yona-friedman-the-dilution-of-architecture {
+    @include project--yona-friedman-the-dilution-of-architecture;
+  }
+
+  &--do-not-trust-the-mirror {
+    @include project--do-not-trust-the-mirror;
+  }
+
+  &--bernar-venet-metametria {
+    @include project--bernar-venet-metametria;
+  }
 }

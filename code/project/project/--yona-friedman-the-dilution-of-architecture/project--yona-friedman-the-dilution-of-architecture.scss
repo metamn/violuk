@@ -1,0 +1,5 @@
+@mixin project--yona-friedman-the-dilution-of-architecture {
+  .project__title {
+    @include title--big($overlay: screen);
+  }
+}

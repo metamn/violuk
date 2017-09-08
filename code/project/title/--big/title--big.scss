@@ -1,0 +1,9 @@
+@mixin title--big($scale: large-7, $overlay: difference) {
+  @include scale($scale);
+  @include font(mostra-nuova-black);
+
+  line-height: $lem * 2;
+  letter-spacing: $lem / 2;
+  color: blue;
+  mix-blend-mode: $overlay;
+}
