@@ -6,8 +6,12 @@
   flex-wrap: wrap;
 
   .image {
-    max-width: 45%;
+    // remove the border bottom
     line-height: 0;
+
+    @include mobile-and-up {
+      max-width: 45%;
+    }
 
     .img {
       @include img;
