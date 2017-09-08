@@ -1,9 +1,6 @@
 @mixin home__grid {
-  padding: $lem;
-
   @include mobile {
     @include grid(1, 0px, $lem);
-    padding: 0;
   }
 
   @include tablet {
