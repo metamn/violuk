@@ -1,5 +1,5 @@
 @mixin project--bernar-venet-metametria {
   .project__title {
-    @include title--big($overlay: color-burn);
+    @include title--big($scale: large-8, $overlay: color-burn);
   }
 }

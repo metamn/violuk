@@ -22,8 +22,8 @@
 @mixin cursor($item, $cursor-image-name, $x: 0, $y: 0, $default: auto) {
   #{$item} {
     &:hover {
-      cursor: url(/assets/images/#{$cursor-image-name}.png) #{$x} #{$y},
-              url(/assets/images/#{$cursor-image-name}.cur),
+      cursor: url(http://metamn.io/violuk/assets/images/#{$cursor-image-name}.png) #{$x} #{$y},
+              url(http://metamn.io/violuk/assets/images/#{$cursor-image-name}.cur),
               #{$default};
     }
   }
