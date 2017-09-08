@@ -1,21 +1,22 @@
 @mixin contact {
-  .link {
-    @include link;
-  }
-
   > * {
     @include scale(small-1);
   }
 
+  .link {
+    @include link;
+  }
+
+
   @include mobile {
-    @include grid(1, 0px, $lem);
+    @include grid(1, 0px, $lem, $title: true);
   }
 
   @include tablet {
-    @include grid(2, $lem, $lem);
+    @include grid(2, $lem, $lem, $title: true);
   }
 
   @include landscape {
-    @include grid(4, $lem, $lem);
+    @include grid(4, $lem, $lem, $title: true);
   }
 }
