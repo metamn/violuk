@@ -23,16 +23,30 @@
   },
   "projects": [
     {
-      "title": "Yona Friedman: Popular Architecture",
+      "title": "Yona Friedman: The Dilution of Architecture",
       "link": "",
       "role": "curator with Nader Seraj",
       "type": "",
-      "venue": "UN",
+      "venue": "Art Center, Ecole Internationale Geneva",
       "location": "Geneva, CH",
       "year": "2017",
       "description": [
-        "A good few sentences / paragraphs here ...",
-        "Each on a new line liek this"
+        "Yona Friedman: The Dilution of Architecture presents the development of Yona Friedman’s creative pursuits, the Hungarian architect, artist, and author of “Utopies Réalisables”.",
+        "His avant-garde ideas explored new conceptions of the city and ways of life existing on the fringes of “mainstream” architecture, from the second half of the 20th century to nowadays",
+        "The exhibition is based on a programme created by Yona Friedman and covers its emblematic themes such as: mobile architecture, the spatial city, urban agriculture, network cities, auto planification, and the role of the architect.",
+        "It is showcased in conjunction with the book “The Dilution of Architecture” by Yona Friedman and Manuel Orazi, edited by Nader Seraj, and published by Park Books - Zurich and Éditions Archizoom - EPFL in 2015.",
+        "Through his prioritisation of the process over the object, Friedman lays out an architectural design that accentuates communication prior to the creation of the shape itself. For users to entirely take in his ideas, he puts forth architectural programmes that are reduced to what is essential, comparable to guidelines for a plural society.",
+        "These are presented within the exhibition through a documenting of his drawings, writings and concepts that are at each and everyone’s scale.",
+        "More than just a collection of projects, the exhibition attempts to comprehend and communicate the seed of such revolutionary thought, which feels all the more relevant today."
+      ],
+      "images": [
+        "yona-friedman-the-dilution-of-architecture-1.jpg",
+        "yona-friedman-the-dilution-of-architecture-2.jpg",
+        "yona-friedman-the-dilution-of-architecture-3.jpg",
+        "yona-friedman-the-dilution-of-architecture-4.jpg",
+        "yona-friedman-the-dilution-of-architecture-5.jpg",
+        "yona-friedman-the-dilution-of-architecture-6.jpg",
+        "yona-friedman-the-dilution-of-architecture-7.jpg"
       ]
     },
     {
@@ -56,19 +70,6 @@
         "do-not-trust-the-mirror-06.jpg",
         "do-not-trust-the-mirror-07.jpg",
         "do-not-trust-the-mirror-08.jpg"
-      ]
-    },
-    {
-      "title": "Judit Kis: I Have Never Happened",
-      "link": "",
-      "role": "curator",
-      "type": "",
-      "venue": "TOPIC",
-      "location": "Geneva, CH",
-      "year": "2016",
-      "description": [
-        "A good few sentences / paragraphs here ...",
-        "Each on a new line liek this"
       ]
     },
     {
