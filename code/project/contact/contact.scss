@@ -3,6 +3,10 @@
     @include link;
   }
 
+  > * {
+    @include scale(small-1);
+  }
+
   @include mobile {
     @include grid(1, 0px, $lem);
   }
