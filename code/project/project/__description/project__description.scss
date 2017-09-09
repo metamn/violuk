@@ -1,7 +1,14 @@
 @mixin project__description {
   order: 3;
-  margin: $lem;
-  padding: $lem;
+
+  @include mobile {
+    padding: $lem 0;
+  }
+
+  @include mobile-and-up {
+    margin: $lem;
+    padding: $lem;
+  }
 
   .text {
     @include text-style(body-text);
