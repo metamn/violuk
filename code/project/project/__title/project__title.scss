@@ -1,11 +1,3 @@
 @mixin project__title {
-  width: 100%;
-  order: 1;
-
-  @include title;
-  @include title--big;
-
-  position: absolute;
-  top: 0;
-  overflow: hidden;
+  //
 }

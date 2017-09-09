@@ -1,4 +1,4 @@
-@mixin title--big($scale: large-7, $overlay: difference) {
+@mixin title--big($scale: large-5, $overlay: difference) {
   @include scale($scale);
   @include font(mostra-nuova-black);
 

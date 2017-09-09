@@ -1,5 +1,5 @@
 @mixin project--yona-friedman-the-dilution-of-architecture {
-  .project__title {
-    @include title--big($overlay: screen);
+  .project__title-as-spacer {
+    @include title--spacer(large-1, white, difference);
   }
 }

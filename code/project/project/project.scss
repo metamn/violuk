@@ -13,6 +13,10 @@
     @include project__title;
   }
 
+  &__title-as-spacer {
+    @include project__title-as-spacer;
+  }
+
   &__thumbs {
     @include project__thumbs;
   }

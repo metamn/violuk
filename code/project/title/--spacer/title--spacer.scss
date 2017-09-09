@@ -1,0 +1,5 @@
+@mixin title--spacer($scale: large-5, $color: white, $mix: difference) {
+  @include scale($scale);
+  color: $color;
+  mix-blend-mode: $mix;
+}
