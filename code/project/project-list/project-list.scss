@@ -3,6 +3,11 @@
     @include title;
   }
 
+  .ul {
+    @include ul;
+    @include list;
+  }
+
   .project-list-item {
     @include project-list-item;
   }

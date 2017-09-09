@@ -1,24 +1,8 @@
 @mixin project-list-item {
   padding-top: $lem;
 
-  display: flex;
-  align-items: baseline;
-  min-height: $lem * 3;
-
   &__title {
     @include title;
-
     order: 2;
-    width: 80%;
   }
-
-  &__year {
-    transform: rotate(-90deg);
-    width: 20%;
-
-    @include tablet {
-      width: 15%;
-    }
-  }
-
 }

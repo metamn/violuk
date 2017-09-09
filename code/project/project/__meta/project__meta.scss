@@ -1,23 +1,11 @@
 @mixin project__meta {
   order: 4;
+  width: 100%;
 
   .ul {
     @include ul;
-
-    .li {
-      display: flex;
-      align-items: flex-start;
-      min-height: $lem * 4;
-
-      .key {
-        transform: rotate(-90deg);
-        width: 15%;
-      }
-
-      .value {
-        width: 80%;
-      }
-    }
+    @include ul--underlined;
+    @include list;
   }
 
   @include portrait {

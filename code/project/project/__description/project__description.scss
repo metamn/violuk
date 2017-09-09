@@ -3,6 +3,14 @@
 
   .text {
     @include text-style(body-text);
+
+    .p {
+      display: none;
+
+      &:first-of-type {
+        display: flex;
+      }
+    }
   }
 
   @include landscape {

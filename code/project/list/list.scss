@@ -1,0 +1,20 @@
+@mixin list {
+  .li {
+    display: flex;
+    align-items: center;
+    padding: $lem / 2 0;
+
+    .key {
+      transform: rotate(-90deg);
+      width: 15%;
+
+      @include scale(small-1);
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .value {
+      width: 80%;
+    }
+  }
+}
