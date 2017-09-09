@@ -6,24 +6,38 @@
       "properties": [
         {
           "name": "font-size",
-          "value": "200%"
+          "value": "150%"
         },
         {
           "name": "line-height",
-          "value": "1"
+          "value": "1.25"
         }
       ],
       "responsive": [
         {
-          "breakpoint": "mobile",
+          "breakpoint": "tablet",
           "properties": [
             {
               "name": "font-size",
-              "value": "150%"
-            },
+              "value": "200%"
+            }
+          ]
+        },
+        {
+          "breakpoint": "laptop",
+          "properties": [
             {
-              "name": "line-height",
-              "value": "1.25"
+              "name": "font-size",
+              "value": "230%"
+            }
+          ]
+        },
+        {
+          "breakpoint": "desktop",
+          "properties": [
+            {
+              "name": "font-size",
+              "value": "300%"
             }
           ]
         }
