@@ -2,8 +2,7 @@
   <h3>Project description</h3>
 
   <div class="text">
-    {% for p in project.description %}
-      <p class="p">{{ p | safe }}</p>
-    {% endfor %}
+    {% set pmore = project.description %}
+    {% include "../../p-more/p-more.html.swig" %}
   </div>
 </aside>

@@ -1,0 +1,9 @@
+@mixin p-more {
+  &__arrows {
+    //padding: $lem 0;
+
+    .arrow-with-triangle {
+      @include arrow-with-triangle;
+    }
+  }
+}

@@ -4,12 +4,9 @@
   .text {
     @include text-style(body-text);
 
-    .p {
-      display: none;
-
-      &:first-of-type {
-        display: flex;
-      }
+    .p-more {
+      @include p-more;
+      @include p-more--closed;
     }
   }
 

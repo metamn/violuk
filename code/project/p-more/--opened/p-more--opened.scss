@@ -1,0 +1,10 @@
+@mixin p-more--opened {
+  .p-more__first-p,
+  .p-more__other-ps {
+    display: flex;
+  }
+
+  .p-more__arrows {
+    display: none;
+  }
+}
