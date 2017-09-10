@@ -1,6 +1,8 @@
 {% include '../head/head.html.swig' %}
 {% include '../icons/icons.html.swig' %}
 
+{% include "../../../framework/design/decorations/wave/wave.html.swig"  %}
+
 <div class="container">
   {% include '../../../project/header/header.html.swig' %}
   {% block content %}{% endblock %}

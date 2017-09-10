@@ -1,3 +1,4 @@
+// - from https://codepen.io/MathiasPaumgarten/pen/CbEjG?page=5
 var canvas = document.getElementById('wave__canvas');
 var size = {
     width: window.innerWidth,
@@ -18,9 +19,9 @@ var options = {
     waveMax: 200,
     waveComeUp: function() {},
     waveRiseSpeed: 15,
-    lineWidth: 10,
+    lineWidth: 2,
     waveLength: 100,
-    distance: 200 // sets the number of waves
+    distance: 20 // sets the number of waves
 };
 
 /*

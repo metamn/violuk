@@ -9,6 +9,10 @@ html {
         @include contact;
       }
 
+      .about {
+        @include about;
+      }
+
       .project-list {
         @include project-list;
       }

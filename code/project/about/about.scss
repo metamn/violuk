@@ -1,0 +1,5 @@
+@mixin about {
+  .wave {
+    @include wave($height: $lem * 2);
+  }
+}
