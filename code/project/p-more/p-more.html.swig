@@ -10,6 +10,10 @@
     {% include "../../framework/design/decorations/arrow-with-triangle/arrow-with-triangle.html.swig"  %}
   </div>
 
+  <div class="p-more__wave">
+    {% include "../../framework/design/decorations/wave/wave.html.swig"  %}
+  </div>
+
   <div class="p-more__other-ps">
     {% for p in pmore %}
       {% if ! loop.first %}

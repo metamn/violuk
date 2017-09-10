@@ -6,4 +6,10 @@
       @include arrow-with-triangle;
     }
   }
+
+  &__wave {
+    .wave {
+      @include wave;;
+    }
+  }
 }

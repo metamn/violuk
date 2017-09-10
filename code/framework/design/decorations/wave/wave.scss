@@ -1,0 +1,14 @@
+// Canvas wave effect
+//
+// - from https://codepen.io/MathiasPaumgarten/pen/CbEjG?page=5
+//
+//
+@mixin wave($width: $lem * 10, $height: $lem * 3) {
+  width: $width;
+  height: $height;
+
+  &__canvas {
+    width: 100%;
+    height: 100%;
+  }
+}

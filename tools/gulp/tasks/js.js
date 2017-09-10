@@ -21,7 +21,7 @@ var js = function(webpack_config, dest) {
   return gulp.src('')
     .pipe(plumber({errorHandler: onError}))
     .pipe(webpack(require(webpack_config)))
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(gulp.dest(dest));
 };
 
