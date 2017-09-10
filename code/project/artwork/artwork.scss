@@ -1,0 +1,19 @@
+@mixin artwork {
+  // setting height
+  height: 20vh;
+  overflow: hidden;
+
+  @include landscape {
+    // setting width
+    .wave {
+      width: calc(66% + #{$lem});
+      overflow: hidden;
+    }
+
+    // moving up
+    position: absolute;
+    left: -$lem;
+    top: 55vh;
+    margin-bottom: 0 !important;
+  }
+}

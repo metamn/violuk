@@ -1,6 +1,57 @@
 @mixin home__grid {
   // We need container because browsersync injects scripts into body which breaks the grid
   .container {
+
+    position: relative;
+
+    .header {
+      order: 1;
+    }
+
+    .intro {
+      order: 2;
+    }
+
+    .project-list {
+      order: 3;
+
+      @include portrait {
+        order: 4;
+      }
+    }
+
+    .artwork {
+      order: 4;
+
+      @include portrait {
+        order: 3;
+      }
+    }
+
+    .about {
+      order: 5;
+
+      @include portrait {
+        order: 3;
+      }
+    }
+
+    .contact {
+      order: 6;
+
+      @include portrait {
+        order: 10
+      }
+    }
+
+    .projects {
+      order: 7;
+    }
+
+    .footer {
+      order: 8;
+    }
+
     @include mobile {
       @include grid(1, 0px, $lem);
 
@@ -34,16 +85,10 @@
     .contact,
     .projects,
     .footer,
-    .about {
+    .about,
+    .artwork {
       width: 100% !important;
       margin-right: 0 !important;
-    }
-
-
-    @include portrait {
-      .contact {
-        order: 100;
-      }
     }
   }
 }
