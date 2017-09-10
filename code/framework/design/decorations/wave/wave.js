@@ -18,9 +18,9 @@ var options = {
     waveMax: 200,
     waveComeUp: function() {},
     waveRiseSpeed: 15,
-    lineWidth: 2,
+    lineWidth: 10,
     waveLength: 100,
-    distance: 20
+    distance: 200 // sets the number of waves
 };
 
 /*

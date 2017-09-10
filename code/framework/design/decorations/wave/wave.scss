@@ -3,7 +3,7 @@
 // - from https://codepen.io/MathiasPaumgarten/pen/CbEjG?page=5
 //
 //
-@mixin wave($width: $lem * 10, $height: $lem * 3) {
+@mixin wave($width: 100%, $height: 100%) {
   width: $width;
   height: $height;
 

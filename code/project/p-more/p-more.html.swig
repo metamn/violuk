@@ -11,7 +11,7 @@
   </div>
 
   <div class="p-more__wave">
-    {% include "../../framework/design/decorations/wave/wave.html.swig"  %}
+    {# include "../../framework/design/decorations/wave/wave.html.swig"  #}
   </div>
 
   <div class="p-more__other-ps">
