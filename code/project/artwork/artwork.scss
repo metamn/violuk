@@ -1,4 +1,6 @@
 @mixin artwork {
+  cursor: pointer;
+  
   // setting height
   height: 20vh;
   overflow: hidden;

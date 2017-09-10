@@ -1,3 +1,10 @@
 @mixin about {
+  display: none;
   margin-bottom: 0 !important;
+  
+  @include colors(white-on-black);
+
+  &--active {
+    @include about--active;
+  }
 }
